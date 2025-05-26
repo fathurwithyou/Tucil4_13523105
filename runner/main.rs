@@ -5,7 +5,7 @@ fn main() {
     let stdin = io::stdin();
     let mut lines = stdin.lock().lines();
 
-    
+    println!("Input");
     let n: usize = match lines.next() {
         Some(Ok(line)) => match line.trim().parse() {
             Ok(num) if num > 0 => num,
@@ -92,7 +92,7 @@ fn main() {
         }
     };
 
-    
+    println!("Output");
     match solve_tsp_dynamic_programming(graph, start_node) {
         Ok((_cost, path)) => { 
             println!("Total cost: {}", _cost);
