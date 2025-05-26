@@ -36,10 +36,9 @@ Proyek ini diorganisir sebagai sebuah **Cargo Workspace** yang terdiri dari dua 
 
 Semua perintah Cargo harus dijalankan dari direktori root workspace (direktori yang berisi `Cargo.toml` level workspace dan subdirektori `solver` serta `runner`).
 
-1.  **Clone Repositori (jika ada):**
+1.  **Clone Repositori:**
     ```bash
-    git clone <url_repositori_anda>
-    cd <nama_direktori_workspace>
+    git clone https://github.com/fathurwithyou/Tucil4_13523105.git
     ```
 
 2.  **Membangun Seluruh Workspace:**
