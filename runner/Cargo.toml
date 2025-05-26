@@ -1,0 +1,11 @@
+[package]
+name = "runner"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]] 
+name = "tsp_runner_executable"
+path = "main.rs"             
+
+[dependencies]
+solver = { path = "../solver" }
