@@ -96,7 +96,18 @@ fn main() {
     match solve_tsp_dynamic_programming(graph, start_node) {
         Ok((_cost, path)) => { 
             println!("Total cost: {}", _cost);
-            println!("{:?}", path);
+            if path.is_empty() {
+                eprintln!("Error: Jalur yang dikembalikan kosong.");
+            } else {
+                for (i, node) in path.iter().enumerate() {
+                    if i == path.len() - 1 {
+                        print!("{}", node); 
+                    } else {
+                        print!("{} -> ", node);
+                    }
+                }
+                println!(); 
+            }
         }
         Err(e) => {
             match e {
